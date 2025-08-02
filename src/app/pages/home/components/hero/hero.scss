@@ -1,0 +1,56 @@
+.hero {
+  padding: 5rem 1rem; // py-20 px-4
+  text-align: center;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .title {
+    font-size: 3rem; // text-5xl
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+
+    @media (min-width: 768px) {
+      font-size: 3.75rem; // md:text-6xl
+    }
+
+    .highlight {
+      color: #eab308; // yellow-500
+    }
+  }
+
+  .description {
+    font-size: 1.25rem; // text-xl
+    color: #d1d5db; // gray-300
+    max-width: 42rem; // max-w-2xl
+    margin: 0 auto 2rem;
+  }
+
+  .rating {
+    display: flex;
+    justify-content: center;
+
+    .stars {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #eab308; // yellow-500
+
+      .star {
+        font-size: 1.25rem;
+
+        &.filled {
+          color: #eab308; // yellow-500
+        }
+      }
+
+      .rating-text {
+        color: white;
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}

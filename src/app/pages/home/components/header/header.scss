@@ -1,0 +1,57 @@
+.header {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  border-bottom: 1px solid rgba(234, 179, 8, 0.2); // yellow-500/20
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+  }
+
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+
+    .icon {
+      // font-size: 30px;
+      color: #eab308; // yellow-500
+    }
+
+    .title {
+      font-size: 20px; // text-3xl
+      font-weight: bold;
+      background: linear-gradient(to right, #eab308, #fde047); // yellow-500 to yellow-300
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .contact-info {
+    display: none;
+    align-items: center;
+    gap: 1.5rem;
+    color: #d1d5db; // gray-300
+
+    @media (min-width: 768px) {
+      display: flex;
+    }
+
+    .info-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      .icon-small {
+        font-size: 1rem;
+      }
+    }
+  }
+}
